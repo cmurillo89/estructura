@@ -79,11 +79,58 @@
 
 
 # Cadenas de formato
-new_messages = 5
-print(f"{new_messages} new messages")
+# new_messages = 5
+# print(f"{new_messages} new messages")
 
-new = 5
-read = 2
-print(f"{new-read} unread messages")
+# new = 5
+# read = 2
+# print(f"{new-read} unread messages")
 
-print(f"{5} new messages and {2} friend request")
+# print(f"{5} new messages and {2} friend request")
+
+# Vamos a aprender condicionales
+
+# is_charged = False
+# if is_charged:
+#     print("Charged")
+# print("Low Battery")
+
+# available = False
+# if available:
+#     print("1 in sotck")
+# else:
+#     print("Out of stock")
+
+# hour = 21
+
+# if hour < 12:
+#     print("Good morning")
+# elif hour < 17:
+#     print("Good afternoon")
+# else:
+#     print("Good night")
+
+
+
+
+ride_type = "Black"
+credits = 4
+
+ride_price = 0
+final_price = 0
+
+if ride_type == "DooberX":
+    ride_price = 20.5
+elif ride_type == "Black":
+    ride_price = 37.9
+else:
+    ride_price = 18.7
+
+print("Ride price: ")
+print(ride_price)
+
+if credits > 0:
+    final_price = ride_price - credits
+
+print("Final price: ")
+print(final_price)
