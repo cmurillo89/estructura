@@ -173,3 +173,63 @@ def add_shipping(cart):
 
 add_shipping(45)
 add_shipping(200)
+
+# TAMBIEN PODEMOS ANIDAR DECLARACIONES ELIF COMO ESTA QUE ENCONTRAMOS EN EL SIGUIENTE EJEMPLO
+
+def calculate(operator, x, y):
+    if operator == "+":
+        print(x + y)
+    elif operator == "-":
+        print(x - y)
+    else:
+        print(f"unknown: {operator}")
+
+calculate("*",40,30)
+
+# Cualquier tipo de valor puede servir como entrada o 
+# salida de una función. De esta manera las funciones pueden hacer uso de las listas
+
+def is_multiplayer(players):
+    print(len(players) == 2)
+
+players = ["Freddy","Paul"]
+is_multiplayer(players)
+
+# FUNCIONES CON BUCLES
+# Las funciones nos ayudan a reutilizar los bucles permitiéndonos cambiar el número de
+# repeticiones o la lista por la que estamos iterando.
+
+def onboard_passengers(bookings):
+    counter = 1
+    while counter <= bookings:
+        print(f"Passenger {counter} on board")
+        counter += 1
+
+onboard_passengers(15)
+
+def display_progress(total_files):
+    for i in range(total_files):
+        i += 1
+        print(f"Downloading file {i} out of {total_files}")
+
+display_progress(3)
+
+# La utilización de un bucle que itera a través de una lista.
+
+def halve_price(cart):
+    for price in cart:
+        print(f"New price: {price/2}")
+
+cart_list = [5, 20, 8]
+halve_price(cart_list)
+
+def display_players(team):
+    number = 1
+    for name in team:
+        print(f"Player {number}: {name}")
+        number += 1
+
+team1 = ["Kim", "lee"]
+team2 = ["Meg", "Jo"]
+
+display_players(team2)
